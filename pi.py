@@ -1,5 +1,5 @@
 # Problem 2
-""" def recursiveAddition(n):
+def recursiveAddition(n):
     recursive_total = 0
     for i in range(1, n+1):
         recursive_total += i**3
@@ -16,7 +16,7 @@ def check_sum(n):
 if __name__ == '__main__':
     print(recursiveAddition(3))
     print(formulaAddition(3))
-    print(check_sum(5)) """
+    print(check_sum(5))
 
 # Problem 3
 def Leibniz():
