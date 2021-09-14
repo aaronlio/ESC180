@@ -20,7 +20,7 @@ name2 = "Prof. Thywissen"
 # Problem 5 
 greetee = "Lord Voldemort"
 
-if greetee == "voldemort":
+if greetee == "Lord Voldemort":
     print("I'm not talking to you")
 else:
     print(greeting + greetee)
