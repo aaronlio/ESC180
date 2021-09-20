@@ -65,6 +65,11 @@ if pie != ice_cream:
     print("I told the truth")
 
 """The English "or" is called "exclusive or" whereas the python "or" is inclusive
-in Python, the xor exists but it doesn't work the same way on integers... "xor"
+in Python, the xor exists but it doesn't work the same way on integers... "xor" --> the symbol is ^
+
+
+Operator precedence for logical/boolean operatures:
+Not, then And, then Or
 """
+
 
