@@ -10,7 +10,6 @@ print(greeting + name2)
 
 # Problem 3
 print(greeting + name1 + " and " + name2 + ". Your names are " + name1 + " and " + name2 + ". Hi there. Your names are still " + name1 + " and " + name2 + ".")
-print(f"{greeting}{name1} and {name2}. Your names are {name1} and {name2}. Hi there. Your names are still {name1} and {name2}.")
 
 # Problem 4
 name1 = "Prof. Cluett"
