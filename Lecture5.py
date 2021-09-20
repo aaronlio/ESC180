@@ -68,3 +68,67 @@ if pie != ice_cream:
 in Python, the xor exists but it doesn't work the same way on integers... "xor"
 """
 
+
+#<--------------- Operator Precedent ------------->
+lazy = False 
+smart = True
+growthmindset = True
+
+if not lazy and smart and growthmindset:
+    print("EngSci")
+elif lazy and smart:
+    print("Physics")
+elif not lazy and smart and not growthmindset:
+    print("Econ")
+else:
+    print ("Ryerson")
+
+#<-------------------- Has roots function example using operator precedent -------------------->
+def has_roots(a, b, c):
+    '''Return True iff ax^2+bx+c has at least one real root'''
+    return b**2 -4*a*c >= 0
+
+def has_no_roots(a, b, c):
+    return b**2 -4*a*c < 0
+
+def has_no_roots2(a, b, c):
+    return not has_roots(a, b, c)
+
+if __name__ == '__main__':
+    print(has_no_roots2(1, 2, 3))
+
+
+#<-------------------------------->
+
+""" def artsie_math(arg1, arg2, op):
+    '''Return arg1 op arg2, where arg1 and arg2 are numbers and op is on of "+" or "-",
+    if op is neither "+" nor "-", print an error message'''
+    if op == "+":
+        return arg1 + arg2
+    elif op == "-":
+        return arg1 - arg2
+    else:
+        print("I am an artsie, I don't know ops that are not + or -")
+        # The return here is none
+
+
+if __name__ == '__main__':
+    #print(artsie_math(4, 5, "+"))
+    print(artsie_math(4, 5, "*")) # Since this function will not have any return with these arguments, it defaults to None """
+
+#<------------ A better version of the last function ------------->
+def artsie_math(arg1, arg2, op):
+    if op != "+" and op != "-":
+        return None
+
+    if op == "+":
+        return arg1 + arg2
+    elif op == "-":
+        return arg1 - arg2
+
+if __name__ == '__main__':
+    res = artsie_math(4, 5, "*")
+    if res != None:
+        print(res)
+    else:
+        print("The artsie had a hard time")
