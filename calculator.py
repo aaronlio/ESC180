@@ -27,7 +27,47 @@ if __name__ == '__main__':
     add(5)
     display_current_value() """
 
-# Problem 5
+""" # Problem 5 & 6
+def display_current_value():
+    print(f"Current value: {current_value}")
+
+def add(to_add):
+    global current_value # Problem 4 addition
+    current_value += to_add
+    return current_value
+
+def multiply(to_multiply):
+    global current_value
+    current_value *= to_multiply
+    return current_value
+
+def divide(to_divide):
+    global current_value
+    current_value //= to_divide
+    return current_value
+
+def memory(to_save):
+    global saved_value
+    saved_value = to_save
+    return saved_value
+
+def recall(to_recall):
+    print(f"Saved value: {saved_value}")
+
+if __name__ == '__main__':
+    saved_value = 0
+    current_value = 0
+    display_current_value()
+    add(5)
+    display_current_value() 
+    divide(5)
+    memory(current_value)
+    display_current_value()
+    multiply(10)
+    display_current_value()
+    recall(saved_value) """
+
+# Problem 7
 def display_current_value():
     print(f"Current value: {current_value}")
 
@@ -53,7 +93,12 @@ def memory(to_save):
     return saved_value
 
 def recall(to_recall):
+    global saved_value
     print(f"Saved value: {saved_value}")
+
+def undo():
+    global saved_value, current_value
+    current_value = saved_value
 
 if __name__ == '__main__':
     saved_value = 0
@@ -66,4 +111,4 @@ if __name__ == '__main__':
     display_current_value()
     multiply(10)
     display_current_value()
-    recall(saved_value)
+    recall(saved_value) 
